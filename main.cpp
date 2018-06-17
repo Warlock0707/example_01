@@ -1,3 +1,10 @@
+/*
+This programs "spits" out any text file contents on the console, and you can additionally specifiy 
+a delay between each characters. 
+
+~$ ./main main.cpp 50 // delay in millseconds
+*/
+
 #include<iostream>
 #include<string>
 #include<fstream>
