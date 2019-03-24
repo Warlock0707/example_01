@@ -16,14 +16,14 @@ int main(int argc, char** argv)
 {
     if(argc != 3) {
         std::cout << "Error: Requires atleast two arguments.\n";
-        exit(0);
+        exit(-1);
     }
 
     std::fstream input;
     input.open(argv[1], std::ios::in);
     if(!input) {
         std::cout << "Error: Can't find the file.\n";
-        exit(0);
+        exit(-1);
     }
 
     int mill = atoi(argv[2]);
